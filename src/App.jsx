@@ -30,14 +30,16 @@ function App() {
         return cvData[lang] || cvData.es;
     }, [lang]);
 
-    const secciones = [
-        { id: 'introduccion', nombre: 'Introduction' },
-        { id: 'experience', nombre: 'Work Experience' },
-        { id: 'skills', nombre: 'Skills' },
-        { id: 'languages', nombre: 'Languages' },
-        { id: 'technical-knowledge', nombre: 'Technical Knowledge' },
+    const secciones = useMemo(() => {
+        return [
+        { id: 'introduccion', nombre: t('Introduction') },
+        { id: 'experience', nombre: t('Work Experience') },
+        { id: 'skills', nombre: t('Skills') },
+        { id: 'languages', nombre: t('Languages') },
+        { id: 'technical-knowledge', nombre: t('Technical Knowledge') },
 
-    ];
+    ]
+    }, [t, lang]);
 
 
     return (
