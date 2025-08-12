@@ -1,0 +1,21 @@
+
+{
+    "name": "Miguel Bolívar",
+    "title": "Desarrollador Full Stack",
+    "about": "Soy un desarrollador apasionado con experiencia en...",
+    "experience": [
+      {
+        "company": "Empresa X",
+        "role": "Programador",
+        "period": "2020 - 2023",
+        "description": "Desarrollo de aplicaciones web con Laravel y React."
+      }
+    ],
+    "education": [
+      {
+        "institution": "Universidad Y",
+        "degree": "Ingeniería Informática",
+        "year": "2018"
+      }
+    ]
+  }

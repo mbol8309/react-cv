@@ -1,0 +1,172 @@
+{
+    "name": "Miguel Bolívar Rodriguez",
+    "title": "Full Stack Developer",
+    "info": [
+        {
+            "icon": "email.png",
+            "text": "mbol8309@gmail.com",
+            "url": "mailto:mbol8309@gmail.com"
+        },
+        {
+            "icon": "linkedin.png",
+            "text": "www.linkedin.com/in/mbol8309",
+            "url": "https://www.linkedin.com/in/mbol8309"
+        },
+        {
+            "icon": "location.png",
+            "text": "Barcelona, Spain"
+        }
+    ],
+    "abstract": {
+        "title": "Professional Profile",
+        "content": "Full Stack Developer and technical leader with over 10 years of experience in corporate environments and technology projects. Specialized in low-code frameworks, workflow-oriented backend architectures, and middleware platforms. Extensive experience in migrations, reusable component design, process automation, and development team support. Recognized for learning ability, collaborative approach, and commitment to quality and continuous delivery. Interested in continuing to add value in technical or leadership roles in digital transformation projects."
+    },
+    "experience": [
+        {
+            "company": "Grupo Catalana Occidente",
+            "role": "Technical Lead - Architecture",
+            "period": "2024 - 2025",
+            "description": [
+                {
+                    "text": "Technical co-leadership of the Architecture team nd shared role as Product Owner of the low-code front-end framework."
+                },
+                {
+                    "text": "Maintenance and evolution of an internal development framework, both in front-end (low-code) and back-end (workflow-oriented)."
+                },
+                {
+                    "text": "Functional and technical definition of new framework controls, as well as planning and management of their development."
+                },
+                {
+                    "text": "Organization and prioritization of team tasks, ensuring continuous deliveries through a weekly release model."
+                },
+                {
+                    "text": "Direction and supervision of the source code migration process from TFS to GitHub, defining repository structure, workflows, and collaborative development protocols."
+                },
+                {
+                    "text": "Continuous technical support for developers, including code review and supervision, as well as creation of new front-end controls according to business needs."
+                }
+            ]
+        },
+        {
+            "company": "Grupo Catalana Occidente",
+            "role": "Full Stack Developer",
+            "period": "2023 - 2024",
+            "description": [
+                {
+                    "text": "Development and maintenance of the internal ramework, including bug fixes and creation of new controls for the low-code environment."
+                },
+                {
+                    "text": "Responsible for designing and configuring the new development template (developer workspace), successfully migrating all components, plugins and frameworks from Visual Studio 2019 to Visual Studio 2022, completing the project ahead of schedule."
+                },
+                {
+                    "text": "Implementation of multi-language functionality in the front-end framework, adapting an architecture originally not designed for this purpose. The first phase was completed in half the estimated time, with subsequent evolutionary improvements."
+                },
+                {
+                    "text": "Progressive evolution within the team, moving from familiarizing myself with the framework to actively collaborating in supporting other developers."
+                }
+            ]
+        },
+        {
+            "company": "Axpe Consulting",
+            "role": "FullStack Developer",
+            "period": "2022 - 2023",
+            "description": [
+                {
+                    "text": "Development and maintenance of a CRM application for a major hospital in Barcelona, using .NET Framework for back-end and Angular for front-end."
+                },
+                {
+                    "text": "Implementation of new user screens and correction of existing functionalities, ensuring interface quality and consistency."
+                },
+                {
+                    "text": "Participation in support tasks and continuous improvement of the application, following the functional requirements of the hospital environment."
+                }
+            ]
+        },
+        {
+            "company": "Freelance Development / Personal Project",
+            "role": "Full Stack Developer (React, Laravel, Rasa, PHP)",
+            "period": "2016 - 2022",
+            "description": [
+                {
+                    "text": "Design, development and maintenance of a customized CRM with advanced frontend and backend functionalities."
+                },
+                {
+                    "text": "Creation of reusable React components, dynamic forms and complex interaction flows."
+                },
+                {
+                    "text": "Integration of an intelligent chatbot using Rasa and Laravel, with user management and conversational context capabilities."
+                },
+                {
+                    "text": "Development of state management systems and business logic in PHP/Laravel."
+                },
+                {
+                    "text": "Implementation of platform for mass emails and personalized campaigns."
+                },
+                {
+                    "text": "Performance optimization in backend (Laravel) and frontend (React), improving response times and user experience."
+                }
+            ]
+        },
+        {
+            "company": "Tronixcar, Cuba",
+            "role": "Founder and Internal Solutions Developer",
+            "period": "2014 - 2021",
+            "description": [
+                {
+                    "text": "Creation and management of a small company specialized in automotive electronics services."
+                },
+                {
+                    "text": "Development and maintenance of internal applications for business management, including employee control, service planning and operational monitoring."
+                },
+                {
+                    "text": "Design and implementation of websites and digital support services for the business."
+                },
+                {
+                    "text": "Comprehensive management of the company’s technological environment, taking on analysis, development, deployment and support tasks."
+                }
+            ]
+        },
+        {
+            "company": "Cira Garcia",
+            "role": "FullStack Developer",
+            "period": "2014",
+            "description": [
+                {
+                    "text": "Complete development of the institutional website for Clı́nica Internacional Cira Garcı́a, including design, content structure and functionality."
+                },
+                {
+                    "text": "Implementation of a management system for recording and organizing medical staff information."
+                },
+                {
+                    "text": "Integration of the main page with functionalities aimed at public visibility of the clinic’s services and specialties."
+                }
+            ]
+        },
+        {
+            "company": "CONOSUR",
+            "role": "Middleware Developer",
+            "period": "2011-2013",
+            "description": [
+                {
+                    "text": "Participation in the implementation of Oracle Fusion Middleware for the Conosur project, working with tools like Oracle Access Manager (OAM) and Oracle Identity Management (including Identity Framework)"
+                },
+                {
+                    "text": "Integration and configuration of various Oracle Fusion Middleware 11g components, such as:",
+                    "items": [
+                        "Oracle Weblogic Server",
+                        "Oracle Identity Manager (OIM) - For user identity management (create, delete, modify, roles)",
+                        "Oracle Access Manager (OAM) - For access management, Single Sign-On and authentication/authorization.",
+                        "Oracle Identity Federation (OIF) - For identity federation between domains (e.g., SAML)"
+                    ]
+                }
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "University Y",
+            "degree": "Computer Engineering",
+            "year": "2018"
+        }
+    ]
+}
