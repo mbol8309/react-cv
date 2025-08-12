@@ -164,9 +164,134 @@
     ],
     "education": [
         {
-            "institution": "University Y",
-            "degree": "Computer Engineering",
-            "year": "2018"
+            "institution": "José Antonio Echeverrı́a University, Cuba",
+            "degree": "Computer Engineer",
+            "period": "2005-2010",
+            "location": "Havana, Cuba"
+        },
+        {
+            "institution": "José Antonio Echeverrı́a University, Cuba",
+            "degree": "Discrete Mathematics",
+            "period": "2011",
+            "location": "Havana, Cuba"
+        },
+        {
+            "institution": "José Antonio Echeverrı́a University, Cuba",
+            "degree": "Computer Architecture and Networks",
+            "period": "2011",
+            "location": "Havana, Cuba"
+        },
+        {
+            "institution": "José Antonio Echeverrı́a University, Cuba",
+            "degree": "Information Technology Security",
+            "period": "2012",
+            "location": "Havana, Cuba"
+        },
+        {
+            "institution": "José Antonio Echeverrı́a University, Cuba",
+            "degree": "Fundamentals of Parallel and Distributed Computing",
+            "period": "2012",
+            "location": "Havana, Cuba"
+        },
+        {
+            "institution": "José Antonio Echeverrı́a University, Cuba",
+            "degree": "Certified Professional Scrum Master",
+            "period": "2024",
+            "location": "Barcelona, Spain"
+        }
+    ],
+    "skills": [
+        "Technical leadership and collaborative management of development teams.",
+        "Analytical ability to identify and solve complex software problems.",
+        "Effective organization and planning in agile environments.",
+        "Focus on code quality, maintainability and best practices.",
+        "High adaptability to new technologies and frameworks.",
+        "Results orientation, meeting deadlines and continuous improvement."
+    ],
+    "languages": [
+        "Spanish (Native)",
+        "English B2"
+    ],
+    "technologies": [
+        "React (Hooks, Redux, Material-UI): reusable component development, state management, UI design.",
+        "Laravel and PHP: structured backend, APIs, performance, scalability.",
+        ".NET Core and C#: enterprise applications and modernization.",
+        "Angular (basic): structured frontend development.",
+        "Node.js and Express.js: backend development and REST APIs.",
+        "jQuery: DOM manipulation and frontend utilities.",
+        "SQL Server and MySQL: relational database design and optimization.",
+        "MQL5: algorithm development for automated trading.",
+        "Bash (Bourne Shell): scripting for automation and system administration.",
+        "Git: version control and collaborative workflow.",
+        "Wordpress: CMS website management.",
+        "XML: structured data handling and configuration.",
+        "SOLID Principles and Clean Code: best practices in design and development.",
+        "Agile and Scrum methodologies: efficient project management."
+    ],
+    "programming_languages": [
+        {
+            "text": "JavaScript / TypeScript",
+            "value": 3
+        },
+        {
+            "text": "PHP",
+            "value": 2
+        },
+        {
+            "text": "C# (.NET)",
+            "value": 2
+        },
+        {
+            "text": "Python",
+            "value": 2
+        },
+        {
+            "text": "HTML / CSS / SCSS",
+            "value": 3
+        },
+        {
+            "text": "C++",
+            "value": 1
+        },
+        {
+            "text": "Bash",
+            "value": 2
+        },
+        {
+            "text": "Angular",
+            "value": 2
+        },
+        {
+            "text": "jQuery",
+            "value": 2
+        },
+        {
+            "text": "Java",
+            "value": 1
+        },
+        {
+            "text": "React",
+            "value": 3
+        },
+        {
+            "text": "Laravel",
+            "value": 2
+        },
+        {
+            "text": "Material-UI",
+            "value": 2
+        },
+        {
+            "text": "SQL Server",
+            "value": 2
+        },
+        {
+            "text": "MQL5",
+            "value": 1
+        },
+        {
+            "text": "Git",
+            "value": 3
         }
     ]
 }

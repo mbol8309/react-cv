@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Section = ({ text, children }) => {
+const Section = ({ text, children, id }) => {
     return (
-        <section>
+        <section id={id}>
             <h3>
                 {text}
             </h3>

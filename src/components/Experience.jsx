@@ -4,19 +4,19 @@ const Experience = ({ title, subtitle, period, items }) => {
 
 
     return (
-        <div className='experience-item'>
-            <div className='experience-head'>
-                <div className='experience-main'>
+        <div className='section-item'>
+            <div className='section-head'>
+                <div className='section-main'>
                     <h4>{title}</h4>
-                    <div className='experience-subtitle'>
+                    <div className='section-subtitle'>
                         {subtitle}
                     </div>
                 </div>
-                <div className='experience-period'>
+                <div className='section-period'>
                     [{period}]
                 </div>
             </div>
-            <div className='experience-items'>
+            <div className='section-items'>
                 <ul>
                     {items?.map((item, index) => (
                         <li key={index}>{item.text}
