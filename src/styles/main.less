@@ -3,6 +3,33 @@
 @import "scrolltotop.less";
 @import "languageswitcher.less";
 
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        background: white !important;
+    }
+
+    .cv-container {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+    }
+
+    // Asegurar que los textos no se corten
+    .section-item,
+    .experience,
+    .education {
+        page-break-inside: avoid;
+    }
+}
+
 .cv-container {
     max-width: 800px;
     margin: auto;
@@ -43,7 +70,7 @@
 
         h3 {
             font-size: 1.3rem;
-            font-weight:400;
+            font-weight: 400;
             border-bottom: 2px solid #000;
             margin-bottom: 5px;
         }

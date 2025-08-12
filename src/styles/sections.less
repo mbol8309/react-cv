@@ -146,7 +146,7 @@
     }
 
     &:hover {
-        
+
         box-shadow:
             0 6px 12px rgba(0, 0, 0, 0.12),
             0 8px 16px rgba(0, 0, 0, 0.08),
@@ -173,7 +173,7 @@
 
             &:hover {
                 background: rgba(180, 180, 180, 0.8);
-                
+
                 transform: translateX(2px);
             }
 
@@ -184,5 +184,43 @@
                 color: #3A2E20;
             }
         }
+    }
+}
+
+.download-button {
+    
+    z-index: 100;
+
+    // Estilo minimalista
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    // Icono + texto
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    background-color: fade(#ffffff, 85%);
+    transition: all 0.3s ease;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+
+    &:hover {
+        background-color: #ffffff;
+        transform: translate(0, -2px);
+        color: #000;
+
+        .pdf-icon {
+            fill: #0066cc;
+        }
+    }
+
+    .pdf-icon {
+        width: 18px;
+        height: 18px;
+        fill: #555;
+        transition: fill 0.3s ease;
     }
 }

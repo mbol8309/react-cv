@@ -1,7 +1,7 @@
 {
   "name": "react-cv",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.2",
   "type": "module",
   "homepage": "https://mbol8309.github.io/react-cv/",
   "scripts": {
@@ -15,8 +15,9 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@react-pdf/renderer": "^4.3.0",
+    "html2canvas": "^1.4.1",
     "i18next": "^25.3.4",
+    "jspdf": "^3.0.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-i18next": "^15.6.1",

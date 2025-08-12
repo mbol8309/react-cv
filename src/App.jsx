@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 import cvESData from './data/cv.es.json';
 import cvENData from './data/cv.en.json';
 
@@ -15,7 +15,10 @@ import IndiceFlotante from './components/IndiceFlotante';
 import ScrollToTop from './components/ScrollToTop';
 import LanguageSwitcher from './components/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
-
+import html2canvas from 'html2canvas';
+import { jsPDF } from 'jspdf';
+import { FaDownload } from 'react-icons/fa';
+import downloadPDF from './util/download';
 
 const cvData = {
     es: cvESData,
@@ -24,7 +27,8 @@ const cvData = {
 
 function App() {
     const { i18n, t } = useTranslation();
-    const lang =  i18n.language || 'es'; // Default to Spanish if no language is set
+    const lang = i18n.language || 'es'; // Default to Spanish if no language is set
+    const cvRef = useRef(null);
 
     const data = useMemo(() => {
         return cvData[lang] || cvData.es;
@@ -32,23 +36,30 @@ function App() {
 
     const secciones = useMemo(() => {
         return [
-        { id: 'introduccion', nombre: t('Introduction') },
-        { id: 'experience', nombre: t('Work Experience') },
-        { id: 'skills', nombre: t('Skills') },
-        { id: 'languages', nombre: t('Languages') },
-        { id: 'technical-knowledge', nombre: t('Technical Knowledge') },
+            { id: 'introduccion', nombre: t('Introduction') },
+            { id: 'experience', nombre: t('Work Experience') },
+            { id: 'skills', nombre: t('Skills') },
+            { id: 'languages', nombre: t('Languages') },
+            { id: 'technical-knowledge', nombre: t('Technical Knowledge') },
 
-    ]
+        ]
     }, [t, lang]);
-
+    ;
 
     return (
         <div>
-            
+
             <IndiceFlotante secciones={secciones} />
             <ScrollToTop />
-            <div className="cv-container">
-                <LanguageSwitcher />
+            <div className="cv-container" ref={cvRef}>
+                <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center' }}>
+                    <LanguageSwitcher />
+                    <button
+                        onClick={()=>downloadPDF(data,lang)}
+                        className="no-print download-button"
+                    ><FaDownload />
+                    </button>
+                </div>
                 <header>
                     <ProfilePicture />
                     <div className="profile-info" id="introduccion">
@@ -132,7 +143,7 @@ function App() {
                 </Section>
 
 
-            
+
             </div>
         </div>
     )

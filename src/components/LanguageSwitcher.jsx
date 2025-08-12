@@ -50,7 +50,7 @@ export default function LanguageSwitcher() {
 
   return (
     <div 
-      className="language-switcher" 
+      className="language-switcher no-print" 
       ref={dropdownRef}
       onMouseLeave={handleMouseLeave}
       onMouseEnter={handleMouseEnter}
@@ -65,7 +65,7 @@ export default function LanguageSwitcher() {
       </button>
       
       {isOpen && (
-        <div className="language-dropdown">
+        <div className="language-dropdown no-print">
           {languages.map((lang) => (
             <button
               key={lang.code}
