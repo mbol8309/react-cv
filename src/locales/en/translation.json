@@ -1,7 +1,9 @@
 {
-  "profile": {
-    "name": "Miguel Bolívar Rodríguez",
-    "title": "Full Stack Developer & Tech Lead",
-    "description": "Full Stack developer and technical lead with over 10 years of experience..."
-  }
+  "Work Experience": "Work Experience",
+  "Education": "Education",
+  "Skills": "Skills",
+  "Languages": "Languages",
+  "Technical Knowledge": "Technical Knowledge",
+  "Programming Languages (Estimated Level)": "Programming Languages (Estimated Level)",
+  "Development Technologies and Frameworks": "Development Technologies and Frameworks"
 }

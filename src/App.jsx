@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
-import cvESData from './data/cv.en.json';
+import React, { useMemo, useState } from 'react';
+import cvESData from './data/cv.es.json';
 import cvENData from './data/cv.en.json';
+
+
 import './styles/main.less';
 import './styles/tailwind.css';
 import ProfilePicture from './components/ProfilePicture';
@@ -10,10 +12,24 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import CircleRating from './components/CircleRating';
 import IndiceFlotante from './components/IndiceFlotante';
+import ScrollToTop from './components/ScrollToTop';
+import LanguageSwitcher from './components/LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
+
+
+const cvData = {
+    es: cvESData,
+    en: cvENData,
+};
 
 function App() {
-    const [lang, setLang] = useState('es');
-    const [data, setData] = useState(cvESData);
+    const { i18n, t } = useTranslation();
+    const lang =  i18n.language || 'es'; // Default to Spanish if no language is set
+
+    const data = useMemo(() => {
+        return cvData[lang] || cvData.es;
+    }, [lang]);
+
     const secciones = [
         { id: 'introduccion', nombre: 'Introduction' },
         { id: 'experience', nombre: 'Work Experience' },
@@ -25,8 +41,12 @@ function App() {
 
 
     return (
-        <div><IndiceFlotante secciones={secciones} />
+        <div>
+            
+            <IndiceFlotante secciones={secciones} />
+            <ScrollToTop />
             <div className="cv-container">
+                <LanguageSwitcher />
                 <header>
                     <ProfilePicture />
                     <div className="profile-info" id="introduccion">
@@ -46,7 +66,7 @@ function App() {
                     <div className="lighter-text">{data.abstract?.content} </div>
                 </Section>
 
-                <Section text={'Work Experience'} id="experience">
+                <Section text={t('Work Experience')} id="experience">
                     {
                         data.experience.map((exp, index) => (
                             <Experience key={index} title={exp.company} subtitle={exp.role}
@@ -55,7 +75,7 @@ function App() {
                     }
                 </Section>
 
-                <Section text={'Education'} id='education'>
+                <Section text={t('Education')} id='education'>
                     {
                         data.education.map((edu, index) => (
                             <Education key={index} title={edu.degree} subtitle={edu.institution}
@@ -64,7 +84,7 @@ function App() {
                     }
                 </Section>
 
-                <Section text={'Skills'} id='skills'>
+                <Section text={t('Skills')} id='skills'>
                     <div className='section-item'>
                         <ul className='section-items'>
                             {
@@ -75,7 +95,7 @@ function App() {
                         </ul>
                     </div>
                 </Section>
-                <Section text={'Languages'} id='languages'>
+                <Section text={t('Languages')} id='languages'>
                     <div className='section-item'>
                         <ul className='section-items'>
                             {
@@ -87,17 +107,17 @@ function App() {
                     </div>
                 </Section>
 
-                <Section text={'Technical Knowledge'} id='technical-knowledge'>
+                <Section text={t('Technical Knowledge')} id='technical-knowledge'>
                     <div className='section-item'>
                         <ul className='section-items'>
-                            <li>Development Technologies and Frameworks
+                            <li>{t('Development Technologies and Frameworks')}
                                 <ul className='section-subsubitems'>
                                     {data.technologies?.map((tech, index) => (
                                         <li key={index}>{tech}</li>
                                     ))}
                                 </ul>
                             </li>
-                            <li>Programming Languages (Estimated Level)
+                            <li>{t('Programming Languages (Estimated Level)')}
                                 <ul className='plain-ul section-subsubitems grid grid-cols-2'>
                                     {data.programming_languages?.map((pl, index) => (
                                         <li key={index} className="same-line whitespace-nowrap">{pl.text} <CircleRating value={pl.value} max={3} /></li>
@@ -110,10 +130,7 @@ function App() {
                 </Section>
 
 
-                <div className="lang-switch">
-                    <button onClick={() => setData(cvESData)}>ES</button>
-                    <button onClick={() => setData(cvENData)}>EN</button>
-                </div>
+            
             </div>
         </div>
     )

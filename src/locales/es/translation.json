@@ -1,7 +1,9 @@
 {
-  "profile": {
-    "name": "Miguel Bolívar Rodríguez",
-    "title": "Desarrollador Full Stack y Líder Técnico",
-    "description": "Desarrollador Full Stack y líder técnico con más de 10 años de experiencia..."
-  }
+  "Education": "Educación",
+  "Languages": "Idiomas",
+  "Skills": "Habilidades",
+  "Work Experience": "Experiencia de trabajo",
+  "Technical Knowledge": "Conocimiento técnico",
+  "Programming Languages (Estimated Level)": "Lenguajes de programación (Nivel estimado)",
+  "Development Technologies and Frameworks": "Tecnologías de desarrollo y plataformas"
 }

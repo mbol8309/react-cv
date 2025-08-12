@@ -1,21 +1,297 @@
-
 {
-    "name": "Miguel Bolívar",
+    "name": "Miguel Bolívar Rodriguez",
     "title": "Desarrollador Full Stack",
-    "about": "Soy un desarrollador apasionado con experiencia en...",
+    "info": [
+        {
+            "icon": "email.png",
+            "text": "mbol8309@gmail.com",
+            "url": "mailto:mbol8309@gmail.com"
+        },
+        {
+            "icon": "linkedin.png",
+            "text": "www.linkedin.com/in/mbol8309",
+            "url": "https://www.linkedin.com/in/mbol8309"
+        },
+        {
+            "icon": "location.png",
+            "text": "Barcelona, España"
+        }
+    ],
+    "abstract": {
+        "title": "Perfil Profesional",
+        "content": "Desarrollador Full Stack y líder técnico con más de 10 años de experiencia en entornos corporativos y proyectos tecnológicos. Especializado en frameworks low-code, arquitecturas backend orientadas a flujos de trabajo y plataformas middleware. Amplia experiencia en migraciones, diseño de componentes reutilizables, automatización de procesos y soporte a equipos de desarrollo. Reconocido por capacidad de aprendizaje, enfoque colaborativo y compromiso con la calidad y entrega continua. Interesado en continuar aportando valor en roles técnicos o de liderazgo en proyectos de transformación digital."
+    },
     "experience": [
-      {
-        "company": "Empresa X",
-        "role": "Programador",
-        "period": "2020 - 2023",
-        "description": "Desarrollo de aplicaciones web con Laravel y React."
-      }
+        {
+            "company": "Grupo Catalana Occidente",
+            "role": "Líder Técnico - Arquitectura",
+            "period": "2024 - 2025",
+            "description": [
+                {
+                    "text": "Co-liderazgo técnico del equipo de Arquitectura y rol compartido como Product Owner del framework front-end low-code."
+                },
+                {
+                    "text": "Mantenimiento y evolución de un framework de desarrollo interno, tanto en front-end (low-code) como back-end (orientado a flujos de trabajo)."
+                },
+                {
+                    "text": "Definición funcional y técnica de nuevos controles del framework, así como planificación y gestión de su desarrollo."
+                },
+                {
+                    "text": "Organización y priorización de tareas del equipo, asegurando entregas continuas mediante un modelo de releases semanales."
+                },
+                {
+                    "text": "Dirección y supervisión del proceso de migración de código fuente desde TFS a GitHub, definiendo estructura de repositorios, workflows y protocolos de desarrollo colaborativo."
+                },
+                {
+                    "text": "Soporte técnico continuo a desarrolladores, incluyendo revisión de código y supervisión, así como creación de nuevos controles front-end según necesidades del negocio."
+                }
+            ]
+        },
+        {
+            "company": "Grupo Catalana Occidente",
+            "role": "Desarrollador Full Stack",
+            "period": "2023 - 2024",
+            "description": [
+                {
+                    "text": "Desarrollo y mantenimiento del framework interno, incluyendo corrección de bugs y creación de nuevos controles para el entorno low-code."
+                },
+                {
+                    "text": "Responsable del diseño y configuración de la nueva plantilla de desarrollo (espacio de trabajo para desarrolladores), migrando con éxito todos los componentes, plugins y frameworks de Visual Studio 2019 a Visual Studio 2022, completando el proyecto antes de lo previsto."
+                },
+                {
+                    "text": "Implementación de funcionalidad multiidioma en el framework front-end, adaptando una arquitectura originalmente no diseñada para este propósito. La primera fase se completó en la mitad del tiempo estimado, con posteriores mejoras evolutivas."
+                },
+                {
+                    "text": "Evolución progresiva dentro del equipo, pasando de familiarizarme con el framework a colaborar activamente en el soporte a otros desarrolladores."
+                }
+            ]
+        },
+        {
+            "company": "Axpe Consulting",
+            "role": "Desarrollador FullStack",
+            "period": "2022 - 2023",
+            "description": [
+                {
+                    "text": "Desarrollo y mantenimiento de una aplicación CRM para un importante hospital de Barcelona, utilizando .NET Framework para back-end y Angular para front-end."
+                },
+                {
+                    "text": "Implementación de nuevas pantallas de usuario y corrección de funcionalidades existentes, asegurando calidad y consistencia de la interfaz."
+                },
+                {
+                    "text": "Participación en tareas de soporte y mejora continua de la aplicación, siguiendo los requisitos funcionales del entorno hospitalario."
+                }
+            ]
+        },
+        {
+            "company": "Freelance Development / Personal Project",
+            "role": "Desarrollador Full Stack (React, Laravel, Rasa, PHP)",
+            "period": "2016 - 2022",
+            "description": [
+                {
+                    "text": "Diseño, desarrollo y mantenimiento de un CRM personalizado con funcionalidades avanzadas de frontend y backend."
+                },
+                {
+                    "text": "Creación de componentes React reutilizables, formularios dinámicos y flujos de interacción complejos."
+                },
+                {
+                    "text": "Integración de un chatbot inteligente usando Rasa y Laravel, con capacidades de gestión de usuarios y contexto conversacional."
+                },
+                {
+                    "text": "Desarrollo de sistemas de gestión de estado y lógica de negocio en PHP/Laravel."
+                },
+                {
+                    "text": "Implementación de plataforma para envíos masivos de emails y campañas personalizadas."
+                },
+                {
+                    "text": "Optimización de rendimiento en backend (Laravel) y frontend (React), mejorando tiempos de respuesta y experiencia de usuario."
+                }
+            ]
+        },
+        {
+            "company": "Tronixcar, Cuba",
+            "role": "Fundador y Desarrollador de Soluciones Internas",
+            "period": "2014 - 2021",
+            "description": [
+                {
+                    "text": "Creación y gestión de una pequeña empresa especializada en servicios de electrónica automotriz."
+                },
+                {
+                    "text": "Desarrollo y mantenimiento de aplicaciones internas para gestión del negocio, incluyendo control de empleados, planificación de servicios y monitorización operativa."
+                },
+                {
+                    "text": "Diseño e implementación de sitios web y servicios de soporte digital para el negocio."
+                },
+                {
+                    "text": "Gestión integral del entorno tecnológico de la empresa, asumiendo tareas de análisis, desarrollo, despliegue y soporte."
+                }
+            ]
+        },
+        {
+            "company": "Cira Garcia",
+            "role": "Desarrollador FullStack",
+            "period": "2014",
+            "description": [
+                {
+                    "text": "Desarrollo completo del sitio web institucional para la Clínica Internacional Cira García, incluyendo diseño, estructura de contenidos y funcionalidad."
+                },
+                {
+                    "text": "Implementación de un sistema de gestión para registro y organización de información del personal médico."
+                },
+                {
+                    "text": "Integración de la página principal con funcionalidades orientadas a la visibilidad pública de los servicios y especialidades de la clínica."
+                }
+            ]
+        },
+        {
+            "company": "CONOSUR",
+            "role": "Desarrollador Middleware",
+            "period": "2011-2013",
+            "description": [
+                {
+                    "text": "Participación en la implementación de Oracle Fusion Middleware para el proyecto Conosur, trabajando con herramientas como Oracle Access Manager (OAM) y Oracle Identity Management (incluyendo Identity Framework)"
+                },
+                {
+                    "text": "Integración y configuración de varios componentes de Oracle Fusion Middleware 11g, como:",
+                    "items": [
+                        "Oracle Weblogic Server",
+                        "Oracle Identity Manager (OIM) - Para gestión de identidades de usuarios (crear, eliminar, modificar, roles)",
+                        "Oracle Access Manager (OAM) - Para gestión de accesos, Single Sign-On y autenticación/autorización.",
+                        "Oracle Identity Federation (OIF) - Para federación de identidades entre dominios (ej. SAML)"
+                    ]
+                }
+            ]
+        }
     ],
     "education": [
-      {
-        "institution": "Universidad Y",
-        "degree": "Ingeniería Informática",
-        "year": "2018"
-      }
+        {
+            "institution": "Universidad José Antonio Echeverría, Cuba",
+            "degree": "Ingeniero en Informática",
+            "period": "2005-2010",
+            "location": "La Habana, Cuba"
+        },
+        {
+            "institution": "Universidad José Antonio Echeverría, Cuba",
+            "degree": "Matemática Discreta",
+            "period": "2011",
+            "location": "La Habana, Cuba"
+        },
+        {
+            "institution": "Universidad José Antonio Echeverría, Cuba",
+            "degree": "Arquitectura de Computadores y Redes",
+            "period": "2011",
+            "location": "La Habana, Cuba"
+        },
+        {
+            "institution": "Universidad José Antonio Echeverría, Cuba",
+            "degree": "Seguridad en Tecnologías de la Información",
+            "period": "2012",
+            "location": "La Habana, Cuba"
+        },
+        {
+            "institution": "Universidad José Antonio Echeverría, Cuba",
+            "degree": "Fundamentos de Computación Paralela y Distribuida",
+            "period": "2012",
+            "location": "La Habana, Cuba"
+        },
+        {
+            "institution": "Universidad José Antonio Echeverría, Cuba",
+            "degree": "Certificado Professional Scrum Master",
+            "period": "2024",
+            "location": "Barcelona, España"
+        }
+    ],
+    "skills": [
+        "Liderazgo técnico y gestión colaborativa de equipos de desarrollo",
+        "Capacidad analítica para identificar y resolver problemas complejos de software",
+        "Organización y planificación efectiva en entornos ágiles",
+        "Enfoque en calidad de código, mantenibilidad y buenas prácticas",
+        "Alta adaptabilidad a nuevas tecnologías y frameworks",
+        "Orientación a resultados, cumplimiento de plazos y mejora continua"
+    ],
+    "languages": [
+        "Español (Nativo)",
+        "Inglés B2"
+    ],
+    "technologies": [
+        "React (Hooks, Redux, Material-UI): desarrollo de componentes reutilizables, gestión de estado, diseño de UI",
+        "Laravel y PHP: backend estructurado, APIs, rendimiento, escalabilidad",
+        ".NET Core y C#: aplicaciones empresariales y modernización",
+        "Angular (básico): desarrollo frontend estructurado",
+        "Node.js y Express.js: desarrollo backend y APIs REST",
+        "jQuery: manipulación del DOM y utilidades frontend",
+        "SQL Server y MySQL: diseño y optimización de bases de datos relacionales",
+        "MQL5: desarrollo de algoritmos para trading automatizado",
+        "Bash (Bourne Shell): scripting para automatización y administración de sistemas",
+        "Git: control de versiones y flujo colaborativo",
+        "Wordpress: gestión de sitios CMS",
+        "XML: manejo de datos estructurados y configuración",
+        "Principios SOLID y Código Limpio: buenas prácticas en diseño y desarrollo",
+        "Metodologías Ágiles y Scrum: gestión eficiente de proyectos"
+    ],
+    "programming_languages": [
+        {
+            "text": "JavaScript / TypeScript",
+            "value": 3
+        },
+        {
+            "text": "PHP",
+            "value": 2
+        },
+        {
+            "text": "C# (.NET)",
+            "value": 2
+        },
+        {
+            "text": "Python",
+            "value": 2
+        },
+        {
+            "text": "HTML / CSS / SCSS",
+            "value": 3
+        },
+        {
+            "text": "C++",
+            "value": 1
+        },
+        {
+            "text": "Bash",
+            "value": 2
+        },
+        {
+            "text": "Angular",
+            "value": 2
+        },
+        {
+            "text": "jQuery",
+            "value": 2
+        },
+        {
+            "text": "Java",
+            "value": 1
+        },
+        {
+            "text": "React",
+            "value": 3
+        },
+        {
+            "text": "Laravel",
+            "value": 2
+        },
+        {
+            "text": "Material-UI",
+            "value": 2
+        },
+        {
+            "text": "SQL Server",
+            "value": 2
+        },
+        {
+            "text": "MQL5",
+            "value": 1
+        },
+        {
+            "text": "Git",
+            "value": 3
+        }
     ]
-  }
+}

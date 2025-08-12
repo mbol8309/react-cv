@@ -53,7 +53,7 @@
             "period": "2023 - 2024",
             "description": [
                 {
-                    "text": "Development and maintenance of the internal ramework, including bug fixes and creation of new controls for the low-code environment."
+                    "text": "Development and maintenance of the internal framework, including bug fixes and creation of new controls for the low-code environment."
                 },
                 {
                     "text": "Responsible for designing and configuring the new development template (developer workspace), successfully migrating all components, plugins and frameworks from Visual Studio 2019 to Visual Studio 2022, completing the project ahead of schedule."

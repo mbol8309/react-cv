@@ -31,8 +31,7 @@ const IndiceFlotante = ({ secciones }) => {
             <div className="foating-index-content">
                 <ul>
                     {secciones.map((sec, index) => (
-                        <li className='index-item'><a
-                            key={sec.id}
+                        <li className='index-item' key={index}><a
                             onClick={() => scrollToSection(sec.id)}
 
 

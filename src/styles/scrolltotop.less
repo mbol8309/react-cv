@@ -1,0 +1,53 @@
+// scroll-to-top.less
+@primary-color: #3b82f6;
+@hover-color: #2563eb;
+@shadow-color: rgba(0, 0, 0, 0.2);
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &.oculto {
+    opacity: 0;
+    transform: translateY(2.5rem);
+    pointer-events: none;
+  }
+
+  &.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  button {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      transform: scale(1.05) translateY(-3px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(135deg, #2563eb, darken(#2563eb, 5%));
+    }
+    
+    &:active {
+      transform: scale(0.98);
+    }
+    
+    svg {
+      width: 1.25rem;
+      height: 1.25rem;
+    }
+  }
+}
