@@ -1,7 +1,7 @@
 import fs from 'fs/promises';
 import path from 'path';
 
-const updateVersion = async (type = 'patch') => {
+const updateVersion = async (type) => {
   const pkgPath = path.resolve(process.cwd(), 'package.json');
   const pkg = JSON.parse(await fs.readFile(pkgPath, 'utf-8'));
   
@@ -10,7 +10,8 @@ const updateVersion = async (type = 'patch') => {
   switch(type) {
     case 'major': pkg.version = `${major + 1}.0.0`; break;
     case 'minor': pkg.version = `${major}.${minor + 1}.0`; break;
-    default: pkg.version = `${major}.${minor}.${patch + 1}`;
+    case 'patch': pkg.version =`${major}.${minor}.${patch + 1}`; break;
+    default: pkg.version = `${major}.${minor}.${patch}`;
   }
   
   await fs.writeFile(pkgPath, JSON.stringify(pkg, null, 2));

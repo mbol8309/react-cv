@@ -9,6 +9,13 @@ export default defineConfig(async ({ mode }) => {
     const version = await updateVersion(mode);
 
     return {
+        css: {
+            preprocessorOptions: {
+                scss: {
+                    api: 'modern-compiler' // también puedes usar 'modern'
+                }
+            }
+        },
         base: '/react-cv/', // Set the base path for GitHub Pages
         resolve: {
             alias: {

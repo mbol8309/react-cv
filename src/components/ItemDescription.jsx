@@ -5,9 +5,9 @@ const ItemDescription = ({ title, subtitle,subsubtitle, period, items }) => {
 
     return (
         <div className='section-item border-bottom mt-3'>
-            <div className='section-head d-flex flex-row'>
+            <div className='section-head d-flex flex-column flex-md-row'>
                 <div className='section-main flex-grow-1 flex-column'>
-                    <h4 className='font-weight-normal'>{title}</h4>
+                    <h4 className='font-weight-normal text-justify'>{title}</h4>
                     {subtitle && <div className=' font-weight-light font-italic'>
                         {subtitle}
                     </div>

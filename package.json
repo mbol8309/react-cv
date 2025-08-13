@@ -1,12 +1,12 @@
 {
   "name": "react-cv",
   "private": true,
-  "version": "0.1.16",
+  "version": "0.1.24",
   "type": "module",
   "homepage": "https://mbol8309.github.io/react-cv/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build --mode patch",
     "build:major": "vite build --mode major",
     "build:minor": "vite build --mode minor",
     "lint": "eslint .",
