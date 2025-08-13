@@ -1,7 +1,7 @@
-@primary-color: #444;
-@hover-color: #f1f1f1;
-@border-color: #ddd;
-@shadow-color: rgba(0, 0, 0, 0.1);
+$primary-color: #444;
+$hover-color: #f1f1f1;
+$border-color: #ddd;
+$shadow-color: rgba(0, 0, 0, 0.1);
 
 .language-switcher {
     position: relative;
@@ -20,12 +20,12 @@
         transition: all 0.2s ease;
 
         &:hover {
-            border-color: darken(@border-color, 10%);
+            border-color: darken($border-color, 10%);
         }
 
         .language-icon {
             font-size: 16px;
-            color: 'black'
+            color: black; // Corregido: comillas innecesarias
         }
 
         .language-short {
@@ -40,9 +40,9 @@
         right: 0;
         margin-top: 4px;
         background: white;
-        border: 1px solid @border-color;
+        border: 1px solid $border-color;
         border-radius: 4px;
-        box-shadow: 0 2px 8px @shadow-color;
+        box-shadow: 0 2px 8px $shadow-color;
         min-width: 50px;
         overflow: hidden;
         animation: fadeIn 0.2s ease-out;
@@ -60,12 +60,12 @@
             transition: background 0.2s ease;
 
             &:hover {
-                background: @hover-color;
+                background: $hover-color;
             }
 
             &.active {
-                background: lighten(@primary-color, 40%);
-                color: darken(@primary-color, 20%);
+                background: lighten($primary-color, 40%);
+                color: darken($primary-color, 20%);
             }
 
             .language-name {
@@ -74,7 +74,7 @@
 
             .language-short {
                 font-weight: bold;
-                color: @primary-color;
+                color: $primary-color;
             }
         }
     }
@@ -85,7 +85,6 @@
         opacity: 0;
         transform: translateY(-5px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);

@@ -18,7 +18,7 @@ const downloadPDF = async (data,lang) => {
         let currentY = 10; // Posición vertical inicial
 
         // 3. Procesar Header
-        const header = document.querySelector('.cv-container > header');
+        const header = document.querySelector('.cv-container > .item-section');
         if (header) {
             const headerCanvas = await html2canvas(header, {
                 scale: 2,

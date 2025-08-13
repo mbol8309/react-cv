@@ -1,11 +1,7 @@
-@import "variables.less";
+
 
 .cv-profile-additional {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
     margin-top: 1rem;
-    margin-left: 10rem;
     gap: 5px;
 }
 
@@ -24,47 +20,19 @@
     width: 100%;
 }
 
-.lighter-text {
-    font-weight: lighter;
-    color: #444;
+.section-content {
+    .section-item:last-child {
+        border-bottom: none !important;
+    }
 }
 
-
 .section-item {
-    margin-top: 1rem;
-
-    .section-head {
-        display: flex;
-        flex-direction: row;
-
-        .section-main {
-            flex-direction: column;
-            flex: 1;
-
-            .section-subtitle {
-                font-style: italic;
-                font-weight: 200;
-                color: #444;
-            }
-
-            .section-subsubtitle {
-                font-style: italic;
-                font-weight: 200;
-                color: #444;
-            }
-        }
-
-        .section-period {
-            font-variant: small-caps;
-        }
-    }
-
+    
     .section-items {
         li {
-            font-size: 1.2rem;
-            color: #444;
+            // font-size: 1.2rem;
+            // color: #444;
             margin-top: 0.5rem;
-            ;
         }
     }
 
@@ -72,13 +40,11 @@
         font-size: 1.3rem;
         font-weight: bold;
         margin-bottom: 5px;
-
     }
 }
 
 .plain-ul {
     list-style-type: none;
-
 }
 
 .circles-container {
@@ -96,12 +62,10 @@
     height: 5px;
     border-radius: 50%;
     border: 1px solid #000;
-    /* Borde para círculos vacíos */
 }
 
 .circle.filled {
     background-color: #000;
-    /* Relleno para círculos llenos */
 }
 
 .same-line {
@@ -129,10 +93,8 @@
     z-index: 100;
     overflow: hidden;
 
-
-
     // Textura de papel
-    &:after {
+    &::after {
         content: '';
         position: absolute;
         top: 0;
@@ -146,7 +108,6 @@
     }
 
     &:hover {
-
         box-shadow:
             0 6px 12px rgba(0, 0, 0, 0.12),
             0 8px 16px rgba(0, 0, 0, 0.08),
@@ -173,7 +134,6 @@
 
             &:hover {
                 background: rgba(180, 180, 180, 0.8);
-
                 transform: translateX(2px);
             }
 
@@ -188,20 +148,15 @@
 }
 
 .download-button {
-    
     z-index: 100;
-
-    // Estilo minimalista
     background: none;
     border: none;
     cursor: pointer;
-
-    // Icono + texto
     display: flex;
     align-items: center;
     gap: 8px;
     padding: 8px 12px;
-    background-color: fade(#ffffff, 85%);
+    background-color: rgba(#ffffff, 0.85);
     transition: all 0.3s ease;
     color: #333;
     font-size: 14px;

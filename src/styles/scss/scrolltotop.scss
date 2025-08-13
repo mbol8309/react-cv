@@ -1,7 +1,7 @@
-// scroll-to-top.less
-@primary-color: #3b82f6;
-@hover-color: #2563eb;
-@shadow-color: rgba(0, 0, 0, 0.2);
+// _scrolltotop.scss
+$primary-color: #3b82f6;
+$hover-color: #2563eb;
+$shadow-color: rgba(0, 0, 0, 0.2);
 
 .scroll-to-top {
   position: fixed;
@@ -25,11 +25,11 @@
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
-    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    background: linear-gradient(135deg, $primary-color, $hover-color);
     color: white;
     border: none;
     cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);;
+    box-shadow: 0 4px 6px $shadow-color;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,8 +37,8 @@
     
     &:hover {
       transform: scale(1.05) translateY(-3px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-      background: linear-gradient(135deg, #2563eb, darken(#2563eb, 5%));
+      box-shadow: 0 6px 12px $shadow-color;
+      background: linear-gradient(135deg, $hover-color, darken($hover-color, 5%));
     }
     
     &:active {

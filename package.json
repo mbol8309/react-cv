@@ -1,7 +1,7 @@
 {
   "name": "react-cv",
   "private": true,
-  "version": "0.1.4",
+  "version": "0.1.16",
   "type": "module",
   "homepage": "https://mbol8309.github.io/react-cv/",
   "scripts": {
@@ -15,9 +15,11 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "bootstrap": "^4.6.2",
     "html2canvas": "^1.4.1",
     "i18next": "^25.3.4",
     "jspdf": "^3.0.1",
+    "less-loader": "^12.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-i18next": "^15.6.1",
@@ -25,7 +27,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.33.0",
-    "@tailwindcss/postcss": "^4.1.11",
     "@types/react": "^19.1.10",
     "@types/react-dom": "^19.1.7",
     "@vitejs/plugin-react": "^5.0.0",
@@ -35,8 +36,8 @@
     "eslint-plugin-react-refresh": "^0.4.20",
     "gh-pages": "^6.3.0",
     "globals": "^16.3.0",
-    "less": "^4.4.0",
     "postcss": "^8.5.6",
+    "sass": "^1.90.0",
     "tailwindcss": "^4.1.11",
     "vite": "^7.1.2"
   }

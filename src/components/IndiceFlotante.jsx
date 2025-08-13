@@ -27,7 +27,7 @@ const IndiceFlotante = ({ secciones }) => {
     };
 
     return (
-        <div className="floating-index">
+        <div className="floating-index d-none d-lg-block">
             <div className="foating-index-content">
                 <ul>
                     {secciones.map((sec, index) => (

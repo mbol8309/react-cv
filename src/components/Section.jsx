@@ -2,11 +2,11 @@ import React from 'react';
 
 const Section = ({ text, children, id }) => {
     return (
-        <section id={id}>
+        <section id={id} className='item'>
             <h3>
                 {text}
             </h3>
-            <div className='section-content'>
+            <div className='mt-3 font-weight-light section-content'>
                 {children}
             </div>
         </section>
