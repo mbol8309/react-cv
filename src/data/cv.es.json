@@ -15,6 +15,10 @@
         {
             "icon": "location.png",
             "text": "Barcelona, España"
+        },
+        {
+            "icon": "phone.png",
+            "text": "(+34) 603490207"
         }
     ],
     "abstract": {
@@ -194,7 +198,7 @@
             "location": "La Habana, Cuba"
         },
         {
-            "institution": "Universidad José Antonio Echeverría, Cuba",
+            "institution": "EIGP Campus, Barcelona, España",
             "degree": "Certificado Professional Scrum Master",
             "period": "2024",
             "location": "Barcelona, España"
