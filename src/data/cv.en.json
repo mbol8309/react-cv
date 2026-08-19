@@ -28,6 +28,22 @@
     "experience": [
         {
             "company": "Grupo Catalana Occidente",
+            "role": "Product Owner",
+            "period": "2025 - Present",
+            "description": [
+                {
+                    "text": "Product Owner of the low-code front-end framework, responsible for the product vision and the definition and prioritization of the backlog."
+                },
+                {
+                    "text": "Definition of functional and technical requirements for new controls, aligning business needs with the development team."
+                },
+                {
+                    "text": "Management and coordination of releases, ensuring continuous value delivery through a weekly release model."
+                }
+            ]
+        },
+        {
+            "company": "Grupo Catalana Occidente",
             "role": "Technical Lead - Architecture",
             "period": "2024 - 2025",
             "description": [
@@ -202,6 +218,12 @@
             "degree": "Certified Professional Scrum Master",
             "period": "2024",
             "location": "Barcelona, Spain"
+        },
+        {
+            "institution": "Microsoft",
+            "degree": "Microsoft Certified: Azure Fundamentals",
+            "period": "2026",
+            "location": "Online"
         }
     ],
     "skills": [
