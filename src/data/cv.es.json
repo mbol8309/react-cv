@@ -23,7 +23,7 @@
     ],
     "abstract": {
         "title": "Perfil Profesional",
-        "content": "Product Owner y líder técnico con más de 10 años de experiencia en desarrollo de software corporativo. Actualmente lidero, como Product Owner, la evolución del framework front-end low-code de Grupo Catalana Occidente: defino el backlog, coordino releases semanales y doy soporte técnico a los equipos de desarrollo. Especializado en frameworks low-code, arquitecturas backend orientadas a flujos de trabajo y plataformas middleware. Experiencia en migraciones de plataforma (TFS a GitHub) y diseño de componentes reutilizables."
+        "content": "Product Owner y líder técnico con más de 10 años de experiencia en el ciclo completo de desarrollo de software, desde la conceptualización hasta el despliegue. Actualmente lidero, como Product Owner, el mantenimiento y la evolución del framework front-end low-code de Grupo Catalana Occidente —utilizado por más de 300 desarrolladores—: defino el backlog, coordino releases semanales y doy soporte técnico a los equipos de desarrollo. Experiencia con varios frameworks, arquitecturas backend orientadas a flujos de trabajo, plataformas middleware y despliegue de aplicaciones en servidores con Docker."
     },
     "experience": [
         {
@@ -58,9 +58,6 @@
                 },
                 {
                     "text": "Organización y priorización de tareas del equipo, asegurando entregas continuas mediante un modelo de releases semanales."
-                },
-                {
-                    "text": "Dirección de la migración de código fuente de TFS a GitHub —más de 700 repositorios—, definiendo estructura de repositorios, workflows y protocolos de desarrollo colaborativo (proyecto en curso)."
                 },
                 {
                     "text": "Soporte técnico continuo a desarrolladores, incluyendo revisión de código y supervisión, así como creación de nuevos controles front-end según necesidades del negocio."
@@ -249,6 +246,7 @@
         "MQL5: desarrollo de algoritmos para trading automatizado",
         "Bash (Bourne Shell): scripting para automatización y administración de sistemas",
         "Git: control de versiones y flujo colaborativo",
+        "Docker: contenedores, docker-compose y despliegue de aplicaciones en servidores",
         "Wordpress: gestión de sitios CMS",
         "XML: manejo de datos estructurados y configuración",
         "Principios SOLID y Código Limpio: buenas prácticas en diseño y desarrollo",

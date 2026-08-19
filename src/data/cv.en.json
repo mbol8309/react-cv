@@ -23,7 +23,7 @@
     ],
     "abstract": {
         "title": "Professional Profile",
-        "content": "Product Owner and technical lead with over 10 years of experience in corporate software development. Currently leading, as Product Owner, the evolution of Grupo Catalana Occidente's low-code front-end framework: defining the backlog, coordinating weekly releases, and providing technical support to development teams. Specialized in low-code frameworks, workflow-oriented backend architectures, and middleware platforms. Experience in platform migrations (TFS to GitHub) and reusable component design."
+        "content": "Product Owner and technical lead with over 10 years of experience across the full software development lifecycle, from concept to deployment. Currently leading, as Product Owner, the maintenance and evolution of Grupo Catalana Occidente's low-code front-end framework —used by over 300 developers—: defining the backlog, coordinating weekly releases, and providing technical support to development teams. Experienced with multiple frameworks, workflow-oriented backend architectures, middleware platforms, and deploying applications to servers with Docker."
     },
     "experience": [
         {
@@ -58,9 +58,6 @@
                 },
                 {
                     "text": "Organization and prioritization of team tasks, ensuring continuous deliveries through a weekly release model."
-                },
-                {
-                    "text": "Leading the source code migration from TFS to GitHub —over 700 repositories—, defining repository structure, workflows, and collaborative development protocols (ongoing project)."
                 },
                 {
                     "text": "Continuous technical support for developers, including code review and supervision, as well as creation of new front-end controls according to business needs."
@@ -249,6 +246,7 @@
         "MQL5: algorithm development for automated trading.",
         "Bash (Bourne Shell): scripting for automation and system administration.",
         "Git: version control and collaborative workflow.",
+        "Docker: containers, docker-compose, and server application deployment.",
         "Wordpress: CMS website management.",
         "XML: structured data handling and configuration.",
         "SOLID Principles and Clean Code: best practices in design and development.",
