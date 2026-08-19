@@ -32,13 +32,13 @@
             "period": "2025 - Present",
             "description": [
                 {
-                    "text": "Product Owner of the low-code front-end framework, responsible for the product vision and the definition and prioritization of the backlog."
+                    "text": "Product Owner of the company's low-code front-end framework, used by over 300 developers to build business applications."
                 },
                 {
-                    "text": "Definition of functional and technical requirements for new controls, aligning business needs with the development team."
+                    "text": "Leading its evolution with two teams: ongoing maintenance and improvements with one, and development of the new React version of the framework with the other."
                 },
                 {
-                    "text": "Management and coordination of releases, ensuring continuous value delivery through a weekly release model."
+                    "text": "Backlog definition and prioritization, functional and technical requirements definition, and weekly release coordination."
                 }
             ]
         },
@@ -60,7 +60,7 @@
                     "text": "Organization and prioritization of team tasks, ensuring continuous deliveries through a weekly release model."
                 },
                 {
-                    "text": "Direction and supervision of the source code migration process from TFS to GitHub, defining repository structure, workflows, and collaborative development protocols."
+                    "text": "Leading the source code migration from TFS to GitHub —over 700 repositories—, defining repository structure, workflows, and collaborative development protocols (ongoing project)."
                 },
                 {
                     "text": "Continuous technical support for developers, including code review and supervision, as well as creation of new front-end controls according to business needs."

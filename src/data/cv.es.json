@@ -32,13 +32,13 @@
             "period": "2025 - Actualidad",
             "description": [
                 {
-                    "text": "Product Owner del framework front-end low-code, responsable de la visión del producto y de la definición y priorización del backlog."
+                    "text": "Product Owner del framework front-end low-code de la compañía, utilizado por más de 300 desarrolladores para crear aplicaciones de negocio."
                 },
                 {
-                    "text": "Definición de requisitos funcionales y técnicos de nuevos controles, alineando las necesidades del negocio con el equipo de desarrollo."
+                    "text": "Lidero su evolución con dos equipos: mantenimiento y mejoras continuas con uno, y desarrollo de la nueva versión del framework en React con el otro."
                 },
                 {
-                    "text": "Gestión y coordinación de releases, asegurando entregas continuas de valor mediante un modelo de releases semanales."
+                    "text": "Definición y priorización del backlog, definición de requisitos funcionales y técnicos, y coordinación de releases semanales."
                 }
             ]
         },
@@ -60,7 +60,7 @@
                     "text": "Organización y priorización de tareas del equipo, asegurando entregas continuas mediante un modelo de releases semanales."
                 },
                 {
-                    "text": "Dirección y supervisión del proceso de migración de código fuente desde TFS a GitHub, definiendo estructura de repositorios, workflows y protocolos de desarrollo colaborativo."
+                    "text": "Dirección de la migración de código fuente de TFS a GitHub —más de 700 repositorios—, definiendo estructura de repositorios, workflows y protocolos de desarrollo colaborativo (proyecto en curso)."
                 },
                 {
                     "text": "Soporte técnico continuo a desarrolladores, incluyendo revisión de código y supervisión, así como creación de nuevos controles front-end según necesidades del negocio."
