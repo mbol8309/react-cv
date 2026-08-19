@@ -179,3 +179,42 @@
         transition: fill 0.3s ease;
     }
 }
+
+.download-wrapper {
+    position: relative;
+    z-index: 200;
+}
+
+.download-menu {
+    position: absolute;
+    top: calc(100% + 4px);
+    right: 0;
+    min-width: 160px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    z-index: 300;
+}
+
+.download-menu-item {
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 9px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: background 0.2s ease;
+    width: 100%;
+
+    &:hover {
+        background: #eef4fb;
+        color: #1e3a5f;
+    }
+}

@@ -17,6 +17,12 @@ import { useTranslation } from 'react-i18next';
 import { FaDownload } from 'react-icons/fa';
 import downloadTypstPDF from './util/downloadTypst';
 
+const TEMPLATES = [
+    { id: 'formal', label: { es: 'Formal', en: 'Formal' } },
+    { id: 'modern', label: { es: 'Moderno', en: 'Modern' } },
+    { id: 'minimal', label: { es: 'Minimalista', en: 'Minimal' } },
+];
+
 const cvData = {
     es: cvESData,
     en: cvENData,
@@ -27,12 +33,14 @@ function App() {
     const lang = i18n.language || 'es'; // Default to Spanish if no language is set
     const cvRef = useRef(null);
     const [generating, setGenerating] = useState(false);
+    const [showTemplates, setShowTemplates] = useState(false);
 
-    const handleDownload = async () => {
+    const handleDownload = async (template) => {
         if (generating) return;
         setGenerating(true);
+        setShowTemplates(false);
         try {
-            await downloadTypstPDF(data, lang);
+            await downloadTypstPDF(data, lang, template);
         } catch (e) {
             console.error('Fallback a impresión:', e);
             window.print();
@@ -65,14 +73,29 @@ function App() {
             <div className="cv-container" ref={cvRef}>
                 <div className='row no-print'>
                     <LanguageSwitcher />
-                    <button
-                        onClick={handleDownload}
-                        className="download-button"
-                        title="Guardar como PDF"
-                        aria-label="Guardar como PDF"
-                        disabled={generating}
-                    ><FaDownload /><span>{generating ? '...' : 'PDF'}</span>
-                    </button>
+                    <div className="download-wrapper">
+                        <button
+                            onClick={() => setShowTemplates(!showTemplates)}
+                            className="download-button"
+                            title="Guardar como PDF"
+                            aria-label="Guardar como PDF"
+                            disabled={generating}
+                        ><FaDownload /><span>{generating ? '...' : 'PDF'}</span>
+                        </button>
+                        {showTemplates && (
+                            <div className="download-menu">
+                                {TEMPLATES.map((t) => (
+                                    <button
+                                        key={t.id}
+                                        className="download-menu-item"
+                                        onClick={() => handleDownload(t.id)}
+                                    >
+                                        {t.label[lang] || t.label.es}
+                                    </button>
+                                ))}
+                            </div>
+                        )}
+                    </div>
                 </div>
                 <div className='row item-section mb-4'>
                     <div className='col-12 col-md-4 d-flex justify-content-center'>

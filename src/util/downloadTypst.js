@@ -10,7 +10,7 @@ const blobToDataUrl = (blob) =>
     reader.readAsDataURL(blob);
   });
 
-const downloadTypstPDF = async (data, lang) => {
+const downloadTypstPDF = async (data, lang, template = "modern") => {
   // 1. Obtener la foto en base64 (data URL)
   let photo = null;
   try {
@@ -26,7 +26,7 @@ const downloadTypstPDF = async (data, lang) => {
   const resp = await fetch(API_URL, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ data, lang, photo }),
+    body: JSON.stringify({ data, lang, photo, template }),
   });
 
   if (!resp.ok) {
@@ -44,7 +44,7 @@ const downloadTypstPDF = async (data, lang) => {
   const url = URL.createObjectURL(pdfBlob);
   const a = document.createElement("a");
   a.href = url;
-  a.download = `${data.name?.replace(/\s+/g, "_") || "CV"}_${lang}.pdf`;
+  a.download = `${data.name?.replace(/\s+/g, "_") || "CV"}_${lang}_${template}.pdf`;
   document.body.appendChild(a);
   a.click();
   a.remove();
