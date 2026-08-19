@@ -12,24 +12,52 @@
         print-color-adjust: exact !important;
     }
 
+    @page {
+        size: A4;
+        margin: 15mm;
+    }
+
     body {
         margin: 0;
         padding: 0;
         background: white !important;
+        color: black !important;
+    }
+
+    // Ocultar interfaz (índice flotante, selector de idioma, botones)
+    .no-print,
+    .floating-index,
+    .scroll-to-top,
+    .download-button,
+    .language-switcher {
+        display: none !important;
     }
 
     .cv-container {
         width: 100% !important;
+        max-width: 100% !important;
         margin: 0 !important;
         padding: 0 !important;
         box-shadow: none !important;
+        text-align: left;
     }
 
-    // Asegurar que los textos no se corten
+    // Evitar cortes de contenido entre páginas
     .section-item,
-    .experience,
-    .education {
+    .item-section,
+    section {
+        break-inside: avoid;
         page-break-inside: avoid;
+    }
+
+    h3 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    a {
+        color: black !important;
+        text-decoration: none !important;
     }
 }
 

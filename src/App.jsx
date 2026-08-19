@@ -15,7 +15,6 @@ import LanguageSwitcher from './components/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 
 import { FaDownload } from 'react-icons/fa';
-import downloadPDF from './util/download';
 
 const cvData = {
     es: cvESData,
@@ -52,9 +51,11 @@ function App() {
                 <div className='row no-print'>
                     <LanguageSwitcher />
                     <button
-                        onClick={() => downloadPDF(data, lang)}
+                        onClick={() => window.print()}
                         className="download-button"
-                    ><FaDownload />
+                        title="Guardar como PDF"
+                        aria-label="Guardar como PDF"
+                    ><FaDownload /><span>PDF</span>
                     </button>
                 </div>
                 <div className='row item-section mb-4'>
