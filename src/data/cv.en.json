@@ -1,6 +1,6 @@
 {
     "name": "Miguel Bolívar Rodriguez",
-    "title": "Full Stack Developer",
+    "title": "Product Owner & Full Stack Technical Lead",
     "info": [
         {
             "icon": "email.png",
@@ -23,7 +23,7 @@
     ],
     "abstract": {
         "title": "Professional Profile",
-        "content": "Full Stack Developer and technical leader with over 10 years of experience in corporate environments and technology projects. Specialized in low-code frameworks, workflow-oriented backend architectures, and middleware platforms. Extensive experience in migrations, reusable component design, process automation, and development team support. Recognized for learning ability, collaborative approach, and commitment to quality and continuous delivery. Interested in continuing to add value in technical or leadership roles in digital transformation projects."
+        "content": "Product Owner and technical lead with over 10 years of experience in corporate software development. Currently leading, as Product Owner, the evolution of Grupo Catalana Occidente's low-code front-end framework: defining the backlog, coordinating weekly releases, and providing technical support to development teams. Specialized in low-code frameworks, workflow-oriented backend architectures, and middleware platforms. Experience in platform migrations (TFS to GitHub) and reusable component design."
     },
     "experience": [
         {
