@@ -15,6 +15,7 @@ import LanguageSwitcher from './components/LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
 
 import { FaDownload } from 'react-icons/fa';
+import downloadTypstPDF from './util/downloadTypst';
 
 const cvData = {
     es: cvESData,
@@ -25,6 +26,20 @@ function App() {
     const { i18n, t } = useTranslation();
     const lang = i18n.language || 'es'; // Default to Spanish if no language is set
     const cvRef = useRef(null);
+    const [generating, setGenerating] = useState(false);
+
+    const handleDownload = async () => {
+        if (generating) return;
+        setGenerating(true);
+        try {
+            await downloadTypstPDF(data, lang);
+        } catch (e) {
+            console.error('Fallback a impresión:', e);
+            window.print();
+        } finally {
+            setGenerating(false);
+        }
+    };
 
     const data = useMemo(() => {
         return cvData[lang] || cvData.es;
@@ -51,11 +66,12 @@ function App() {
                 <div className='row no-print'>
                     <LanguageSwitcher />
                     <button
-                        onClick={() => window.print()}
+                        onClick={handleDownload}
                         className="download-button"
                         title="Guardar como PDF"
                         aria-label="Guardar como PDF"
-                    ><FaDownload /><span>PDF</span>
+                        disabled={generating}
+                    ><FaDownload /><span>{generating ? '...' : 'PDF'}</span>
                     </button>
                 </div>
                 <div className='row item-section mb-4'>
